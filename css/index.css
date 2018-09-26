@@ -1,0 +1,130 @@
+.section1>div{
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .section1 .xinlai {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+} */
+.section1 .xinlai img{
+    margin-left: 36px;
+    opacity: 0.5;
+}
+.section1.animation .xinlai img {
+    transition: 1s;
+    margin-left: 0;
+    opacity: 1;
+}
+
+/* 第二屏 */
+.section2>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section2 .shield {
+    width: 460px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section2 .shield img:nth-child(3){
+    transform: translate(1000px,550px) rotate(270deg);
+}
+.section2.animation .shield img:nth-child(3) {
+    transition: all 1.6s;
+    transform: none;
+}
+
+/* 第三屏 */
+.section3>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.circle {
+    width: 453px;
+    height: 449px;
+    background: url('../images/circle.png') no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle .rocket {
+    transform: translate(-700px,500px);
+}
+.section3.animation .circle .rocket{
+    transition: all 1s;
+    transform: none;
+}
+
+/* 第四屏开始 */
+.section4>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.searchBox {
+    width: 530px;
+    height: 410px;
+}
+.searchBtn {
+    width: 529px;
+    height: 66px;
+    background: url('../images/search.png') no-repeat;
+    position: relative;
+    transform: translate(-800px,0)
+    
+}
+.key{
+    position: absolute;
+    background: url('../images/key.png') no-repeat;
+    top: 25px;
+    left: 20px;
+    height: 23px;
+    width: 0;
+}
+.result{
+    background: url('../images/result.png') no-repeat;
+    height: 0;
+    width: 529px;
+}
+.section4.animation .searchBtn {
+    transition: all 1s;
+    transform: none;
+}
+.section4.animation .key{
+    transition: all 1s 1s steps(5);
+    width: 99px;
+}
+.section4.animation .result{
+    transition: all 1s 2.5s;
+    height: 372px;
+}
+/* 第五屏 */
+.section5>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.browserFace {
+    width: 1002px;
+    height: 842px;
+    border: 5px solid #fff;
+    display: flex;
+    position: relative;
+}
+.toolbar {
+    align-self: flex-start;
+}
+.extra {
+    /* align-self: flex-end; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
